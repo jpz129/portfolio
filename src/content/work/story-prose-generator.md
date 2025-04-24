@@ -134,13 +134,11 @@ The light kissed Mira's fingertips, and for one heartbeat, the child's eyes refl
 
 ### 🧪 Try It Yourself
 
-<iframe 
-  src="https://huggingface.co/spaces/jpz129/story-prose-generator"
-  width="100%" 
-  height="600" 
-  style="border: 1px solid #ccc; border-radius: 8px;" 
-  allow="clipboard-write; microphone; camera">
-</iframe>
+<script
+  type="module"
+  src="https://gradio.s3-us-west-2.amazonaws.com/5.26.0/gradio.js"
+></script>
+<gradio-app src="https://jpz129-story-prose-generator.hf.space"></gradio-app>
 
 ---
 
@@ -150,7 +148,8 @@ The light kissed Mira's fingertips, and for one heartbeat, the child's eyes refl
 - **LangChain** for memory logic  
 - **Claude 3.7 Sonnet** for prose generation  
 - **spaCy** for semantic checks  
-- **Google Cloud Run** for deployment  
+- **Google Cloud Run** for deployment
+- **Gradio** for quick frontend  
 
 ---  
 
