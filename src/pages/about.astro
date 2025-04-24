@@ -5,54 +5,51 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Juan Pablo" description="About Juan Pablo Zamanillo">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
 				title="About Juan Pablo"
-				tagline="I'm a generative AI engineer and fiction writer based in Sonoma. I design systems that think in context and write to make sense of emotional truth."
+				tagline="I'm a generative AI engineer and fiction writer based in Sonoma. I design systems that think in context and write to make sense of truth."
 			>
 				<img
 					width="1553"
 					height="873"
-					src="/assets/at-work.jpg"
+					src="/assets/at-work.jpeg"
 					alt="Juan Pablo Zamanillo portrait"
 				/>
 			</Hero>
 
 			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
+			  <h2 class="section-title">Background</h2>
+			  <div class="content">
+			    <p class="mb-4">
+			      I'm Juan Pablo, a generative AI engineer and fiction writer living in Sonoma, California. My work sits at the intersection of language, emotion, and systems design.
+			    </p>
+		
+			    <p class="mb-4">
+			      I come from a background in natural language processing and have spent years helping teams bring meaning to messy data, from intelligence analysis to creative storytelling tools. But my focus has shifted—less about optimization, more about presence. I'm building tools I believe in. And writing stories I need to tell.
+			    </p>
+			    <p class="mb-4">
+			      You may find me leading AI projects or writing from a sunlit corner with Jessy nearby. I’m always chasing that feeling where purpose and presence meet. This site is a living record of that search.
+			    </p>
+			  </div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>I earned my M.S. in Data Science from American University, where I combined a strong foundation in statistics and machine learning with a deep curiosity about language and human systems. It’s where I learned how to think in models and how to ask better questions.</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<p>
+					  I'm fluent in designing, building, and evaluating generative AI systems. My toolbox includes Python, FastAPI, LangChain, and Hugging Face, with deep hands-on experience deploying models on the cloud and managing pipelines with GitHub Actions and Docker. I lead with both technical clarity and creative instinct.
+					</p>
+					<p>
+					  Beyond code, I'm a systems thinker, a writer, and a fierce advocate for simplicity in product design. 
+					</p>
 				</div>
 			</section>
 		</main>
@@ -116,5 +113,9 @@ import Hero from '../components/Hero.astro';
 			display: contents;
 			font-size: var(--text-lg);
 		}
+	}
+
+	.content p {
+		margin-bottom: 1rem;
 	}
 </style>
