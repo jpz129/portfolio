@@ -132,6 +132,17 @@ The light kissed Mira's fingertips, and for one heartbeat, the child's eyes refl
 
 ---  
 
+### 🧪 Try It Yourself
+
+<iframe 
+  src="https://huggingface.co/spaces/jpz129/story-prose-generator"
+  width="100%" 
+  height="600" 
+  style="border: 1px solid #ccc; border-radius: 8px;" 
+  allow="clipboard-write; microphone; camera">
+</iframe>
+
+---
 
 ### ⚙️ Tech Stack  
 
