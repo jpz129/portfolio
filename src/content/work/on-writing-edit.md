@@ -1,6 +1,6 @@
 ---
 title: "Revise Like King"
-description: "An AI-powered revision engine that rewrites your prose using principles from Stephen King's 'On Writing'."
+description: "An AI-powered revision engine that cuts the fat and sharpens your prose using the tough-love rules from Stephen King's 'On Writing.'"
 publishDate: 2025-04-25
 tags: ["FastAPI", "LangChain", "OpenAI", "Cloud Run", "Pinecone"]
 repo: "https://github.com/jpz129/revise-like-king"
@@ -11,42 +11,46 @@ img_alt: "Screenshot of the revision API interface"
 
 ### 📖 The Story
 
-This project was born out of a simple question: what if Stephen King could revise your writing?
+I used to think good writing meant getting it perfect on the first try.  
+Then I read *On Writing* by Stephen King and I lost a lot of sleep.
 
-I wanted to build a tool that doesn’t just generate text — it *revises* yours. Not a toy, but a trustworthy editor. Something that could meet you halfway — with memory, taste, and humility.
+King didn’t bother pretending. Writing starts messy and honest. Characters surface as you go writing the all important story. 
 
-So I taught GPT-4 to think like King. I embedded *On Writing* into Pinecone, used LangChain to retrieve semantic advice, and wired it all together with FastAPI and Cloud Run.
+That set me free to write raw, real, with the power to write what I know.   
+And it gave me an idea:
 
-This wasn’t a playground. It was a fully productionalized, containerized, and deployable LLM application that treats your input with the respect good writing deserves.
+> *What if Stephen King could help revise my ugly first drafts?*
+
+So I built **Revise Like King**, a tool that greets you after you’ve wrestled with the rumble of honesty on the page. It makes you feel excited to be the first reader of your work.
 
 ---
 
 ### 🧠 What It Does
 
-You send it a passage of text. The system:
+Send it some writing. Behind the curtain, it:
 
-1. Semantically analyzes the passage
-2. Queries a Pinecone index of *On Writing* for relevant advice
-3. Constructs a revision prompt using GPT-4
-4. Returns a new version of your text — clearer, tighter, and more King-like
+1. **Reads** for sense and style
+2. **Hunts** *On Writing* for blunt, battle-tested advice
+3. **Builds** a revision prompt tailored to what your draft needs
+4. **Returns** a tighter version with your voice, just, better (sorry)
 
 ---
 
-### 🧪 Example Request
+### ✍️ Quick Example
 
+**You send:**
 ```json
 {
   "text": "Ben opened the door and immediately knew he was in trouble."
 }
 ```
 
----
-
-### ✍️ Example Revision
-
+**You get back:**
 ```text
-Ben opened the door. Trouble was waiting on the other side, thick in the air and silent as regret.
+Ben opened the door. Trouble waited on the other side, thick in the air and quiet as regret.
 ```
+
+Juicy! Still yours.
 
 ---
 
@@ -59,18 +63,21 @@ Ben opened the door. Trouble was waiting on the other side, thick in the air and
 
 <gradio-app src="https://jpz129-on-writing-edit.hf.space"></gradio-app>
 
-
 ---
 
-### ⚙️ Tech Stack
+### ⚙️ How It Works (for the tech-curious)
 
-- **FastAPI** for routing and API logic
-- **LangChain** for prompt orchestration and semantic retrieval
-- **OpenAI GPT-4** for revision generation
-- **Pinecone** for semantic document search
-- **Docker** for containerization
-- **Google Cloud Run** for deployment
-- **Gradio** for the demo frontend
+*(If you’re just here for the magic, class dismissed.)*
+
+- **FastAPI** runs the core engine
+- **LangChain** builds smart prompts, fetches fitting advice
+- **Pinecone** holds a semantic index of *On Writing*
+- **OpenAI GPT-4** does the heavy lifting
+- **Docker** keeps it clean
+- **Google Cloud Run** handles deployment
+- **Gradio** powers the instant demo
+
+Real AI. Real engineering. None of it gets in the way of real writing.
 
 ---
 
