@@ -260,3 +260,14 @@ h5 {
 		gap: 12rem;
 	}
 }
+
+
+pre, code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+.content {
+  overflow-x: hidden;
+}
